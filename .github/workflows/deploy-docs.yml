@@ -23,7 +23,7 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: e2pskrbm8XVZk0etEblPNoUK
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO__TEAM: gustaweb
 
       - name: Deploy storybook
