@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: e2pskrbm8XVZk0etEblPNoUK
+          TURBO__TEAM: gustaweb
 
       - name: Deploy storybook
         working-directory: ./packages/docs
